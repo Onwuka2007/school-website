@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- For the logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>School fees</title>
+
+    <style>
+      .hero {
+        height: 70vh;
+      }
+      .fees-sect {
+        margin: 80px auto;
+      }
+      .fees-content {
+        margin: 50px 100px;
+        width: 70%;
+      }
+      .fees-content h1 {
+        margin: 30px 0 30px 0;
+      }
+
+      .div-sects span {
+        font-size: 14px;
+      }
+      .div-sects {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #f4c542;
+        line-height: 2;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          height: 50vh;
+        }
+        .fees-content {
+          margin: 50px 20px;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <p style="cursor: default">U-CEE SCHOOLS</p>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+        </li>
+        <li><a href="missionStatement.html">Mission Statement</a></li>
+        <li><a href="staff.html">Teaching Staff</a></li>
+        <li><a href="registerOnline.html">Register Online</a></li>
+        <li class="active"><a href="fees.html">Fees</a></li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <!-- Desktop menu -->
+      <ul id="nav-links" class="dektop-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="#">Our School ▾</a>
+          <ul>
+            <li>
+              <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+            </li>
+            <li><a href="missionStatement.html">Mission Statement</a></li>
+            <li><a href="staff.html">Teaching Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Admissions ▾</a>
+          <ul>
+            <li><a href="registerOnline.html">Register Online</a></li>
+            <li class="active-sect"><a href="fees.html">Fees</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li>
+          <a href="#">More ▾</a>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about-us-sect">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay hidden"></div>
+
+    <section class="fees-sect">
+      <div class="hero">
+        <div
+          class="hero-bg active"
+          style="background: url('/Images/board.png')"
+        ></div>
+        <div
+          class="hero-bg"
+          style="background-image: url('/Images/class.png')"
+        ></div>
+        <div
+          class="hero-bg"
+          style="background-image: url('/Images/board.png')"
+        ></div>
+        <div class="hero-content">
+          <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+          <h1>FEES</h1>
+        </div>
+      </div>
+
+      <div class="fees-content">
+        <h1>FEES</h1>
+        <h1>Academic Year 2025 - 2026</h1>
+        <p
+          style="
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f4c542;
+            font-size: 18px;
+          "
+        >
+          Fees are reviewed annually and may be altered. So any changes to 2026
+          - 2027 session fees will be communicated later. The fees below are for
+          the current session term. Go to the
+          <a href="registerOnline.html" style="color: red; cursor: pointer"
+            >Register</a
+          >
+          section to register and view your payment method.
+        </p>
+
+        <div class="div-sects">
+          <h1>Tuition Fees</h1>
+          <h3 style="margin-bottom: 20px">Junior Section</h3>
+          <p><strong>Nursery 1 - 2 &nbsp;</strong><span>0 per term.</span></p>
+          <p><strong>Primary 1 - 6 &nbsp;</strong><span>0 per term.</span></p>
+
+          <h3 style="margin: 20px 0 20px 0">Secondary Section</h3>
+          <p>
+            <strong>Junior Secondary 1 - 3 &nbsp;</strong
+            ><span>0 per term.</span>
+          </p>
+          <p>
+            <strong>Senior Secondary 1 - 6 &nbsp;</strong
+            ><span>0 per term.</span>
+          </p>
+          <span
+            >(Additional 0 for Junior and Secondary Secondary 3 pupils for
+            W.A.E.C. examination registration)</span
+          >
+        </div>
+
+        <div class="div-sects">
+          <h1>School Wears</h1>
+          <h3 style="margin-bottom: 20px">Junior Section</h3>
+          <p><strong>School Uniform &nbsp;</strong><span> 0 per term.</span></p>
+          <p>
+            <strong>School Cardigan &nbsp;</strong><span> 0 per term.</span>
+          </p>
+          <p><strong>Socks &nbsp;</strong><span> 0 per term.</span></p>
+
+          <h3 style="margin: 20px 0 20px 0">Secondary Section</h3>
+          <p><strong>School Uniform &nbsp;</strong><span> 0 per term.</span></p>
+          <p>
+            <strong>School Cardigan &nbsp;</strong><span> 0 per term.</span>
+          </p>
+          <p><strong>Socks &nbsp;</strong><span> 0 per term.</span></p>
+        </div>
+
+        <div class="div-sects">
+          <h1>Extra-lessons</h1>
+          <p>
+            <strong>For Junior Students &nbsp;</strong
+            ><span> 0 per month.</span>
+          </p>
+          <p>
+            <strong>For Senior Students &nbsp;</strong
+            ><span> 0 per month.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

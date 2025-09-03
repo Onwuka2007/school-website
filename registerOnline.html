@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- For the logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Register Online</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <p style="cursor: default">U-CEE SCHOOLS</p>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+        </li>
+        <li>
+          <a href="missionStatement.html">Mission Statement</a>
+        </li>
+        <li><a href="staff.html">Teaching Staff</a></li>
+        <li class="active-sect">
+          <a href="registerOnline.html">Register Online</a>
+        </li>
+        <li><a href="fees.html">Fees</a></li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <!-- Desktop menu -->
+      <ul id="nav-links" class="dektop-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="#">Our School ▾</a>
+          <ul>
+            <li>
+              <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+            </li>
+            <li>
+              <a href="missionStatement.html">Mission Statement</a>
+            </li>
+            <li><a href="staff.html">Teaching Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Admissions ▾</a>
+          <ul>
+            <li class="active-sect">
+              <a href="registerOnline.html">Register Online</a>
+            </li>
+            <li><a href="fees.html">Fees</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li>
+          <a href="#">More ▾</a>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about-us-sect">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay hidden"></div>
+
+    <section class="online-reg-sect">
+      <div class="text-overlay">
+        <img src="/Images/class.png" class="image-overlay" />
+        <div class="text-content">
+          <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+          <h1>REGISTER ONLINE</h1>
+        </div>
+      </div>
+
+      <div class="register-texts">
+        <h1>Register Online</h1>
+        <p style="color: #b71c1c; font-weight: bold">
+          Please note that the deadline for registration for 2026 entry is 01
+          December 2025.
+        </p>
+        <p>To register your child, please complete the form below.</p>
+        <p>
+          As part of the registration, we will ask you to send the following
+          documents, which you may wish to locate in advance:
+        </p>
+        <ul style="margin-left: 50px; list-style-type: square">
+          <li>
+            A copy of your child’s full birth certificate (the version which
+            names parents)
+          </li>
+          <li>A passport-style photo of your child</li>
+        </ul>
+        <p>
+          Please be aware that you are unable to save progress to return at a
+          later date, so you should complete the form when you have all the
+          relevant information to hand. We recommend that you complete the form
+          using the Google Chrome or Edge browser. Please also note that we are
+          unable to accept payment by any card payment for the registration fee,
+          only bank transfer is acceptable.
+        </p>
+        <p>
+          Please complete this form in as much detail as possible. We need this
+          information to be able to process your application for a place for
+          your child.
+        </p>
+
+        <div class="reg-form">
+          <div
+            style="
+              margin: -20px;
+              background: #1a1919;
+              text-align: center;
+              color: #3a91c7;
+            "
+          >
+            <h1>Registration Form</h1>
+          </div>
+          <form
+            action="https://formspree.io/f/mjkongpn"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="name">Full Name</label>
+            <input type="text" name="name" required />
+
+            <label for="email" aria-autocomplete="inline">Email Address</label>
+            <input type="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" required />
+
+            <label for="gender">Gender</label>
+            <select name="gender" required>
+              <option value="">-- Select --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <label for="D-O-B">Date Of Birth</label>
+            <input type="date" name="D-O-B" />
+
+            <label for="address">Current Home Address</label>
+            <textarea name="address" rows="2" required></textarea>
+
+            <label for="position">School Section</label>
+            <select name="position" required>
+              <option value="">-- Select --</option>
+              <option value="kg">Kindergarten</option>
+              <option value="nursey">Nursery School</option>
+              <option value="primary">Primary School</option>
+              <option value="secondary">Secondary School</option>
+            </select>
+
+            <label for="specialty">Entry Class</label>
+            <input
+              type="text"
+              name="specialty"
+              placeholder="E.g. Senior Secondary School 3"
+            />
+
+            <label for="qualification">Previous School and Address</label>
+            <textarea name="address" rows="2" required></textarea>
+
+            <label for="experience">Any Medical Condition / Allergies</label>
+            <select name="position" required>
+              <option value="">-- Select --</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <!-- <label for="cv">Upload Passport</label>
+            <input type="file" name="cv" accept=".pdf,.png,.jpeg" required />
+
+            <label for="bitrhCert">Upload Birth Certificate</label>
+            <input
+              type="file"
+              name="bitrhCert"
+              accept=".pdf,.png,.jpeg,.docx,.doc"
+              required
+            /> -->
+
+            <button type="submit">Submit Form</button>
+          </form>
+        </div>
+
+        <h2 style="font-weight: bold; margin-bottom: 30px">
+          How we will use the information provided in this form
+        </h2>
+        <p>
+          This information will be used by the School during the admission
+          process in order to manage and assess your application and your
+          child’s suitability for a place at the School.
+        </p>
+
+        <ul style="margin-left: 50px; list-style-type: square">
+          <li>
+            The mode of payment and any other relevant information will be sent
+            to the Email address provided in the form. Go to
+            <a href="fees.html" style="color: #b71c1c; cursor: pointer">fees</a>
+            to check the current fees before any payment.
+          </li>
+          <li>
+            We may contact your child’s current or previous school to ask for a
+            reference.
+          </li>
+          <li>
+            We may ask for information about other schools to which you are
+            applying because they may hold their entrance exam on the same day
+            as ours.
+          </li>
+          <li>
+            We may contact other people with parental responsibility to check
+            that they consent to your child joining the School; the confidential
+            information will be used to ensure that we have made any reasonable
+            adjustments/suitable arrangements for your child when they visit the
+            School or during any entrance assessments and subsequently if they
+            are offered a place in the school.
+          </li>
+        </ul>
+        <p>
+          For more information about how the School will use your information,
+          and your child’s information, please
+          <a href="#contact" style="color: #b71c1c; cursor: pointer">contact us</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="/JS/script.js"></script>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>

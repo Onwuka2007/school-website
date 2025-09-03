@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- For the logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Join Our Team</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <p style="cursor: default">U-CEE SCHOOLS</p>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+        </li>
+        <li><a href="missionStatement.html">Mission Statement</a></li>
+        <li><a href="staff.html">Teaching Staff</a></li>
+        <li><a href="registerOnline.html">Register Online</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li class="active-sect"><a href="joinTeam.html">Join Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <!-- Desktop menu -->
+      <ul id="nav-links" class="dektop-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="#">Our School ▾</a>
+          <ul>
+            <li>
+              <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+            </li>
+            <li><a href="missionStatement.html">Mission Statement</a></li>
+            <li><a href="staff.html">Teaching Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Admissions ▾</a>
+          <ul>
+            <li><a href="registerOnline.html">Register Online</a></li>
+            <li><a href="fees.html">Fees</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li class="active-sect"><a href="joinTeam.html">Join Our Team</a></li>
+        <li>
+          <a href="#">More ▾</a>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about-us-sect">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay hidden"></div>
+
+    <section class="online-reg-sect">
+      <div class="text-overlay">
+        <img src="/Images/staffImg.webp" alt="Teacher Image" class="image-overlay" />
+        <div class="text-content">
+          <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+          <h1>JOIN OUR TEAM</h1>
+        </div>
+      </div>
+
+      <div class="register-texts">
+        <h1>JOIN OUR TEAM</h1>
+        <p>Want to be a part of our staff?</p>
+        <p>
+          At U-CEE School, we believe that education transforms lives. We're
+          looking for passionate, dedicated, and innovative individualswho want
+          to make a real differnce in the lives of students.
+        </p>
+        <p>Why Work With Us?</p>
+        <ul style="margin-left: 50px; list-style-type: square">
+          <li>A supportive and collaborative environment.</li>
+          <li>Opportunities for professional growth and training.</li>
+          <li>A chance to impact future leaders in our community.</li>
+          <li>A forward-thinking academic culture.</li>
+        </ul>
+        <p>Here are the current available openings:</p>
+        <ul style="margin-left: 50px; list-style-type: square">
+          <li>Subject Teachers (Arts, ICT)</li>
+          <li>Class Teachers (Primary 4, Nursery 2)</li>
+          <li>Administrative Staff</li>
+          <li>Non-Academic Staff</li>
+        </ul>
+        <p>Requirements:</p>
+        <ul style="margin-left: 50px; list-style-type: square">
+          <li>Minimum of [B.Ed / B.Sc / HND depending on role]</li>
+          <li>Strong communication and interpersonal skills.</li>
+          <li>Passion for education and student development.</li>
+          <li>
+            Ability to work in a team and adapt to a dynamic school environment.
+          </li>
+        </ul>
+        <p><strong>How to Apply:</strong></p>
+        <p>
+          Interested applicants should submit their details through the form
+          below. After submitting, send their CV through the email provided.
+          Shortlisted candidates will be contacted via email.
+        </p>
+
+        <div class="reg-form">
+          <div
+            style="
+              margin: -20px;
+              background: #1a1919;
+              text-align: center;
+              color: #3a91c7;
+            "
+          >
+            <h1>vacancy form</h1>
+          </div>
+          <form
+            action="https://formspree.io/f/mjkongpn"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="name">Full Name</label>
+            <input type="text" name="name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" required />
+
+            <label for="address">Address</label>
+            <textarea name="address" rows="2" required></textarea>
+
+            <label for="position">Position Applying For</label>
+            <select name="position" required>
+              <option value="">-- Select --</option>
+              <option value="teaching">Teaching Staff</option>
+              <option value="non-teaching">Administrative Staff</option>
+              <option value="admin">Non-Teaching Staff</option>
+            </select>
+
+            <label for="specialty">Specialty</label>
+            <input
+              type="text"
+              name="specialty"
+              placeholder="E.g. Senior Secondary School 3, Mathematics"
+            />
+
+            <label for="qualification">Highest Qualification</label>
+            <select name="qualification" required>
+              <option value="">-- Select --</option>
+              <option value="NCE">NCE</option>
+              <option value="B.Ed">B.Ed</option>
+              <option value="M.Ed">M.Ed</option>
+              <option value="B.Sc">B.Sc</option>
+              <option value="M.Sc">M.Sc</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label for="experience">Years of Experience</label>
+            <select name="experience" required>
+              <option value="">-- Select --</option>
+              <option value="0-1">0–1 years</option>
+              <option value="2-5">2–5 years</option>
+              <option value="6+">6+ years</option>
+            </select>
+
+            <label for="message">Why do you want to work with us?</label>
+            <textarea name="message" rows="6"></textarea>
+
+            <p class="cv-note">
+              After submitting this form, please send your CV to
+              <strong>careers@uceeschool.com</strong>
+            </p>
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+
+        <h2 style="font-weight: bold; margin-bottom: 30px">
+          How we will use the information provided in this form
+        </h2>
+        <p>
+          This information will be used by the School Management during the
+          evaluation process in order to review your application and your
+          suitability for a place at the school.
+        </p>
+        <p>
+          For more information about how the School will use your information,
+          and your personal information, please
+          <a
+            href="#contact"
+            style="color: #b71c1c; cursor: pointer; text-decoration: none"
+            >contact us</a
+          >.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="/JS/script.js"></script>
+
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>

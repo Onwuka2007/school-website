@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+
+    <title>Student Events</title>
+    <!-- <style>
+      .hero {
+        height: 70vh;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 768px) {
+        .hero {
+          height: 50vh;
+        }
+        .hero-content h1 {
+          display: none;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <p style="cursor: default">U-CEE SCHOOLS</p>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+        </li>
+        <li><a href="missionStatement.html">Mission Statement</a></li>
+        <li><a href="staff.html">Teaching Staff</a></li>
+        <li><a href="registerOnline.html">Register Online</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li class="active-sect"><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <!-- Desktop menu -->
+      <ul id="nav-links" class="dektop-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li>
+          <a href="#">Our School ▾</a>
+          <ul>
+            <li>
+              <a href="index.html#headTeacherWelcome">Head Teacher Welcome</a>
+            </li>
+            <li><a href="missionStatement.html">Mission Statement</a></li>
+            <li><a href="staff.html">Teaching Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Admissions ▾</a>
+          <ul>
+            <li><a href="registerOnline.html">Register Online</a></li>
+            <li><a href="fees.html">Fees</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html#extraCurricular">Extra Curricular Activities</a>
+        </li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li>
+          <a href="#">More ▾</a>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about-us-sect">About Us</a></li>
+            <li class="active-sect"><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay hidden"></div>
+
+    <section class="gallery-sect">
+      <div class="hero" style="height: 60vh; margin-bottom: 50px">
+        <img class="hero-bg" src="/Images/class.png" />
+        <img class="hero-bg active" src="/Images/board.png" />
+        <img class="hero-bg" src="/Images/staffImg.webp" />
+        <img class="hero-bg" src="/Images/schoolKids.png" />
+        <div class="hero-content">
+          <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+          <h1>EVENT GALLERY</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="gall-welcome">
+          <h1>EVENT AND GALLERY</h1>
+          <p style="line-height: 1.5">
+            Welcome to U-CEE School's gallery. Explore our Student Event and
+            Gallery section to discover fun activities happening both in around
+            the school. From exciting excursions to school competitions and
+            classroom activities, there's something for everyone. Join in and be
+            a part of our vibrant community!
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <div class="tab-btn active" data-category="all">All</div>
+          <div id="sports" class="tab-btn" data-category="sports">Sports</div>
+          <div id="excursion" class="tab-btn" data-category="excursion">
+            Excursion
+          </div>
+          <div id="educative" class="tab-btn" data-category="educative">
+            Educative
+          </div>
+          <div id="games" class="tab-btn" data-category="games">Games</div>
+          <div class="tab-btn" data-category="class">Class Activities</div>
+          <div class="tab-btn" data-category="upcoming">Upcoming Events</div>
+        </div>
+
+        <!-- Posts -->
+        <div id="posts">
+          <!-- Sports tab -->
+          <div class="event" data-category="sports">
+            <img src="/Images/class.png" alt="Soccer Alumni" />
+            <div class="event-content">
+              <h2>Event name when she tells me</h2>
+              <p><small>The Date of the event</small></p>
+              <p>
+                Desciption of the event... Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Fuga tenetur corrupti autem
+                explicabo iure temporibus.
+              </p>
+              <div class="tags">
+                <span>Alumni Events</span><span>Student News</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="sports">
+            <img src="/Images/class.png" alt="Sports" />
+            <div class="event-content">
+              <h2>dummy head</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#" onclick="expand()" class="read-more-btn"
+                  >Read more</a
+                >
+              </p>
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deserunt, rerum. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Delectus iste distinctio porro nam maiores.
+                Repellendus ea in dolorum ipsa hic?
+                <a href="#" onclick="collapse()" class="read-less-btn">
+                  Read less</a
+                >
+              </p>
+              <div class="tags">
+                <span>Sports</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="sports">
+            <img src="/Images/class.png" alt="Sports" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Sports</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Excursion tab -->
+          <div class="event" data-category="excursion">
+            <img src="/Images/class.png" alt="excursion" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>excursion</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="excursion">
+            <img src="/Images/class.png" alt="excursion" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>excursion</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="excursion">
+            <img src="/Images/class.png" alt="excursion" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Sports</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Educative tab -->
+          <div class="event" data-category="educative">
+            <img src="/Images/class.png" alt="educative" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>excursion</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="educative">
+            <img src="/Images/class.png" alt="educative" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>excursion</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="educative">
+            <img src="/Images/class.png" alt="educative" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                id odio illo vel quas blanditiis autem excepturi atque sunt.
+                Blanditiis?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>excursion</span><span>Student Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Games tab -->
+          <div class="event" data-category="games">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="games">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="games">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class activities tab -->
+          <div class="event" data-category="class">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="class">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="class">
+            <img src="/Images/class.png" alt="Campus Life" />
+            <div class="event-content">
+              <h2>dummy header</h2>
+              <p><small>summy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dolores reiciendis ipsum vero magnam neque alias at
+                repellat veritatis eaque dolor deserunt ab eum tempora possimus.
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>Campus News</span><span>Facilities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming events tab  -->
+          <div class="event" data-category="upcoming">
+            <img src="/Images/class.png" alt="Academic Excellence" />
+            <div class="event-content">
+              <h2>another one</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, totam?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>School News</span><span>Academics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="upcoming">
+            <img src="/Images/class.png" alt="Academic Excellence" />
+            <div class="event-content">
+              <h2>another one</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, totam?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>School News</span><span>Academics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event" data-category="upcoming">
+            <img src="/Images/class.png" alt="Academic Excellence" />
+            <div class="event-content">
+              <h2>another one</h2>
+              <p><small>dummy date</small></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, totam?
+                <a href="#">Read more</a>
+              </p>
+              <div class="tags">
+                <span>School News</span><span>Academics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+      const postsPerPage = 4; //Number of images to be displayed at a time
+      let currentPage = 1;
+
+      const posts = Array.from(document.querySelectorAll("#posts .event"));
+      const pagination = document.getElementById("pagination");
+      const tabBtns = document.querySelectorAll(".tab-btn");
+
+      let currentCategory = "all";
+
+      function showPosts() {
+        const filteredPosts = posts.filter(
+          (post) =>
+            currentCategory === "all" ||
+            post.dataset.category === currentCategory
+        );
+
+        const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+        const start = (currentPage - 1) * postsPerPage;
+        const end = start + postsPerPage;
+
+        posts.forEach((post) => (post.style.display = "none"));
+        filteredPosts
+          .slice(start, end)
+          .forEach((post) => (post.style.display = "flex"));
+
+        pagination.innerHTML = "";
+        for (let i = 1; i <= totalPages; i++) {
+          const a = document.createElement("a");
+          a.textContent = i;
+          a.href = "#";
+          if (i === currentPage) a.classList.add("active");
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            currentPage = i;
+            showPosts();
+          });
+          pagination.appendChild(a);
+        }
+      }
+
+      tabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentCategory = btn.dataset.category;
+          currentPage = 1;
+          showPosts();
+        });
+      });
+
+      showPosts();
+    </script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

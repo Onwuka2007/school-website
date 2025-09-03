@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags  -->
+    <meta
+      name="description"
+      content="U-CEE School is dedicated to providing
+      world-class education, nuturing students to achieve academic excellence,
+      creativity, and character development."
+    />
+    <meta
+      property="og:description"
+      content="Join U-CEE School today and give your child the foundation for success."
+    />
+    <meta
+      property="og:title"
+      content="U-CEE School - Improving Human Dignity Through Sound Knowledge."
+    />
+    <meta
+      name="keywords"
+      content="best schools in lagos, school website, U-cee school website, u-cee"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="U-CEE Schools" />
+
+    <!-- Open Graph Image -->
+    <meta property="og:url" content="https://u-cee-schools.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://u-cee-schools.vercel.app/Images/og-image.jpg"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Images/site.webmanifest" />
+    <link rel="shortcut icon" href="/Images/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- For the logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>
+      U-CEE School | Improving Human Dignity Through Sound Knowledge
+    </title>
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <p style="cursor: default">U-CEE SCHOOLS</p>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#headTeacherWelcome">Head Teacher Welcome</a></li>
+        <li><a href="missionStatement.html">Mission Statement</a></li>
+        <li><a href="staff.html">Teaching Staff</a></li>
+        <li><a href="#" class="register">Book Appointment</a></li>
+        <li><a href="registerOnline.html">Register Online</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="#extraCurricular">Extra Curricular Activities</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <!-- Desktop menu -->
+      <ul id="nav-links" class="dektop-menu">
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#">Our School ▾</a>
+          <ul>
+            <li><a href="#headTeacherWelcome">Head Teacher Welcome</a></li>
+            <li><a href="missionStatement.html">Mission Statement</a></li>
+            <li><a href="staff.html">Teaching Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Admissions ▾</a>
+          <ul>
+            <li><a href="#" class="register">Book Appointment</a></li>
+            <li><a href="registerOnline.html">Register Online</a></li>
+            <li><a href="fees.html">Fees</a></li>
+          </ul>
+        </li>
+        <li><a href="#extraCurricular">Extra Curricular Activities</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="joinTeam.html">Join Our Team</a></li>
+        <li>
+          <a href="#">More ▾</a>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-us-sect">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="overlay hidden"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div
+        class="hero-bg active"
+        style="background: url('/Images/board.png')"
+      ></div>
+      <div
+        class="hero-bg"
+        style="background-image: url('/Images/class.png')"
+      ></div>
+      <div
+        class="hero-bg"
+        style="background-image: url('/Images/board.png')"
+      ></div>
+      <div class="hero-content">
+        <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+        <h1>Welcome to</h1>
+        <h1>U-CEE Schools</h1>
+        <p>Improving Human Dignity Through Sound Knowledge</p>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Book an Appointment <i class="fas fa-calendar-check"></i></h3>
+          <span class="close">&times;</span>
+        </div>
+
+        <form
+          action="https://formspree.io/f/mjkongpn"
+          method="POST"
+          class="form-container"
+        >
+          <input
+            type="text"
+            id="firstname"
+            name="Name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            type="text"
+            id="lastname"
+            name="Preferred-Date"
+            placeholder="Preferred date"
+            required
+          />
+
+          <textarea
+            name="Reason-For-Visit"
+            id="reason"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Floating Button -->
+    <div class="floating-btn">
+      <div id="floatList">
+        <a href="#" class="register">Appointment</a>
+        <a href="#liveMap">Visit Us</a>
+        <a href="registerOnline.html">Apply</a>
+      </div>
+      <a href="close-open" id="plus-sign">
+        <i class="fas fa-plus"></i>
+      </a>
+    </div>
+
+    <!--Proprietress' section-->
+    <section class="about-head reveal" id="headTeacherWelcome">
+      <div class="about-head-content">
+        <div class="head-content">
+          <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+          <h1>Proprietress’ Introduction</h1>
+        </div>
+        <p class="reveal">
+          It is with immense pride and heartfelt joy that I welcome you to U-CEE
+          Schools, a place where every child’s potential is nurtured and
+          celebrated. Our school stands as a beacon of excellence, dedicated to
+          fostering not only academic achievement but also the personal growth
+          and well-being of every student entrusted to our care.
+        </p>
+        <p class="reveal">
+          At U-CEE Schools, we believe that education is a journey—one that
+          should inspire curiosity, creativity, and a lifelong love for
+          learning. Our dedicated team of educators works tirelessly to create a
+          safe, supportive, and stimulating environment where children are
+          encouraged to ask questions, explore new ideas, and develop the
+          confidence to pursue their dreams.
+        </p>
+        <p class="reveal">
+          We understand that each child is unique, with their own strengths,
+          interests, and aspirations. That is why our curriculum is designed to
+          be both challenging and flexible, allowing every student to discover
+          and develop their talents. Whether in the classroom, on outdoor
+          activities, or through our vibrant extracurricular programs, we strive
+          to provide opportunities for every child to shine.
+        </p>
+        <p class="reveal">
+          Our commitment extends beyond academics. We place great emphasis on
+          values such as respect, integrity, empathy, and responsibility. These
+          principles are woven into the fabric of our school community, guiding
+          our students as they grow into compassionate and principled young
+          people, ready to make a positive impact in the world.
+        </p>
+        <p class="reveal">
+          As a parent myself, I understand the hopes and concerns you have for
+          your child’s education. I want to assure you that at U-CEE Schools,
+          your child’s happiness, safety, and success are our top priorities. We
+          value open communication and strong partnerships with our families,
+          believing that together, we can provide the best possible foundation
+          for your child’s future.
+        </p>
+        <p class="reveal">
+          We are proud of our rich tradition of excellence, but we are also
+          forward-thinking, embracing innovation and new teaching methods to
+          prepare our students for the challenges of a rapidly changing world.
+          Our teachers regularly engage in professional development, ensuring
+          that they bring the latest knowledge and best practices into the
+          classroom.
+        </p>
+        <p class="reveal">
+          Community is at the heart of U-CEE Schools. We encourage our students
+          to participate in service projects, cultural events, and leadership
+          opportunities that help them develop a sense of responsibility and
+          belonging. Through these experiences, our students learn the
+          importance of giving back and working together for the greater good.
+        </p>
+        <p class="reveal">
+          I invite you to visit our campus, meet our wonderful staff, and see
+          firsthand the vibrant learning environment we have created. Together,
+          let us inspire, empower, and nurture the leaders of tomorrow. Thank
+          you for choosing to be part of our school family.
+        </p>
+
+        <div class="head-content">
+          <p style="color: #3a91c7">Mrs. Uchenna C. Orakwe (PhD)</p>
+          <p style="color: #b71c1c">Proprietress</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra-Curricular Activities -->
+    <section class="reveal" id="extraCurricular">
+      <div class="curriculum-section">
+        <div class="curriculum-text reveal">
+          <h2>Extra-Curricular Activities</h2>
+          <p>
+            At U-CEE Schools, extra-curricular activities are an essential part
+            of a well-rounded education. We offer a vibrant range of
+            opportunities beyond the classroom, from sports clubs and music
+            ensembles to art workshops and drama productions. Students also
+            enjoy enriching excursions, including museum visits, outdoor
+            adventure trips, and cultural experiences that broaden their
+            horizons. These activities help foster creativity, teamwork, and
+            confidence, while making school life fun and memorable. Below are
+            some exciting pictures capturing these moments in action.
+          </p>
+        </div>
+
+        <div class="curriculum-image">
+          <img src="/Images/schoolKids.png" alt="School kids image" />
+        </div>
+      </div>
+
+      <div class="info-images">
+        <a href="gallery.html#educative">
+          <div
+            class="card reveal"
+            style="background-image: url('/Images/class.png')"
+          >
+            <span>Class Activities</span>
+          </div>
+        </a>
+        <a href="gallery.html#sports">
+          <div
+            class="card reveal"
+            style="background-image: url('/Images/class.png')"
+          >
+            <span>Sports Activities</span>
+          </div>
+        </a>
+        <a href="gallery.html#games">
+          <div
+            class="card reveal"
+            style="background-image: url('/Images/class.png')"
+          >
+            <span>Music Activities</span>
+          </div>
+        </a>
+        <a href="gallery.html#excursion">
+          <div
+            class="card reveal"
+            style="background-image: url('/Images/class.png')"
+          >
+            <span>excursions</span>
+          </div>
+        </a>
+      </div>
+      <div class="more-images-btn">
+        <a href="gallery.html">More Activities...</a>
+      </div>
+    </section>
+
+    <!-- News Section-->
+    <section class="news-and-events reveal" id="news">
+      <div class="news-text">
+        <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+        <h2>upcoming events</h2>
+      </div>
+
+      <div class="event-list">
+        <div class="reveal">
+          <h1>27 Jul.</h1>
+          <h3>Summer Lesson Starts</h3>
+          <p>All Day</p>
+        </div>
+        <div class="reveal">
+          <h1>29 Aug.</h1>
+          <h3>Summer Lesson Ends</h3>
+          <p>School Closed</p>
+        </div>
+        <div class="reveal">
+          <h1>15 Sep.</h1>
+          <h3>Resumption</h3>
+          <p>All Day</p>
+        </div>
+        <div class="reveal">
+          <h1>30 Oct.</h1>
+          <h3>School Excursion</h3>
+          <p>All Classes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About The School -->
+    <section class="about-us-sect reveal" id="about-us-sect">
+      <div class="curriculum-section">
+        <div class="curriculum-text reveal">
+          <h2>About The School</h2>
+          <p>
+            U-CEE Schools is a vibrant and inclusive learning community
+            dedicated to nurturing the minds and hearts of young learners.
+            Established with a vision to provide quality education in a
+            supportive and inspiring environment, our school has become a place
+            where children are encouraged to dream big, think critically, and
+            grow into confident, responsible individuals.
+          </p>
+
+          <div class="answer reveal">
+            <p>
+              At U-CEE Schools, we are more than just a school—we are a family.
+              We value strong partnerships with parents and the wider community,
+              working together to ensure that every child receives the support
+              and encouragement they need to succeed. Our commitment is to
+              inspire, empower, and prepare our students to become lifelong
+              learners and positive contributors to society. Our passionate and
+              experienced teachers use innovative teaching methods to engage
+              students and foster a love for learning.
+            </p>
+            <p>
+              We invite you to join us on this exciting educational journey and
+              experience the difference that U-CEE Schools can make in your
+              child’s life.
+            </p>
+          </div>
+
+          <div class="read-more-btn" style="text-align: left; margin: 40px 0">
+            <a href="#">Read More ▾</a>
+          </div>
+          <div class="read-less-btn" style="text-align: left; margin: 40px 0">
+            <a href="#">Read Less ▲</a>
+          </div>
+        </div>
+
+        <div class="curriculum-image">
+          <img src="/Images/schKids.png" alt="School kids image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links reveal">
+      <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
+      <h1>quick links</h1>
+      <div class="link-grids">
+        <div>
+          <a href="missionStatement.html">
+            <h2>Mission Statement</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="staff.html">
+            <h2>Teaching Staff</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="register">
+            <h2>Book Appointment</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="fees.html">
+            <h2>School Fees</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="gallery.html">
+            <h2>Gallery</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="parents.html">
+            <h2>Parent's Review</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="joinTeam.html">
+            <h2>Join Our Team</h2>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="register">
+            <h2>Register Online</h2>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Map -->
+    <section class="map-section reveal" id="liveMap">
+      <h2>
+        Find Us
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#b71c1c"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+          />
+        </svg>
+      </h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3964.4992291437375!2d3.323877!3d6.4582531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8968557675b7%3A0x3595b5ef4cba5dbb!2s29%20Ibitoye%20St%2C%20Alaba%2C%20Lagos%20102103%2C%20Lagos!5e0!3m2!1sen!2sng!4v1756935640524!5m2!1sen!2sng"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
