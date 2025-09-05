@@ -15,3 +15,6 @@ It includes pages like home, gallery, registration, and about.
 
 ## Notes
 Work in progress, more features coming soon.
+
+## Live Link
+https://school-website-mu-seven.vercel.app/

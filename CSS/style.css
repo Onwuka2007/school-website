@@ -583,7 +583,7 @@ nav li ul li a:hover {
 /* Footer */
 .school-footer {
   height: fit-content;
-  padding: 40px 70px 40px 30px;
+  padding: 0 70px 40px 30px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -740,7 +740,7 @@ nav li ul li a:hover {
 
 /* What Parents Say */
 .parent-comments {
-  padding: 30px;
+  padding: 20px;
   margin: 100px auto;
   width: 100%;
   text-align: center;
@@ -955,7 +955,7 @@ nav li ul li a:hover {
 .reg-form {
   border: 1px solid #ccc;
   padding: 20px;
-  width: 900px;
+  max-width: 900px;
   max-width: 100%;
   margin: 50px 0 50px 0;
 }
@@ -968,6 +968,7 @@ nav li ul li a:hover {
   display: block;
   margin: 12px 0 6px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .reg-form h2 {
@@ -976,22 +977,16 @@ nav li ul li a:hover {
   color: #3a91c7;
 }
 
-.reg-form label {
-  display: block;
-  margin: 12px 0 6px;
-  font-weight: bold;
-  font-size: 15px;
-}
-
 .reg-form input,
 select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border: 1px solid #44444467;
+  border-radius: 5px;
+  margin-bottom: 10px;
   font-size: 14px;
+  outline: none;
 }
 
 .reg-form input[type="file"] {
@@ -1001,7 +996,7 @@ textarea {
 }
 
 .reg-form button {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   background: #3a91c7;
   border: none;
@@ -1049,12 +1044,16 @@ textarea {
   z-index: -1; /*keeps the text over the dark overlay background*/
 }
 .cv-note {
-  background: #f9f9f9;
-  border-left: 4px solid #b71c1c;
+  background: #ffffff79;
+  border-left: 4px solid #326d92;
   padding: 10px 15px;
   margin-top: 15px;
   font-size: 0.95rem;
   font-style: italic;
+}
+.cv-note a{
+  text-decoration: none;
+  color: #b71c1c;
 }
 
 /* Mobile View */

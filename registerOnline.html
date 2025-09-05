@@ -3,6 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Register online at Ucee School. Complete the admission form easily and begin your child’s journey with us today."
+    />
+    <meta name="author" content="U-CEE Schools" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:description"
+      content="Register online at Ucee School. Complete the admission form easily and begin your child’s journey with us today."
+    />
+    <meta property="og:title" content="Register Online | U-CEE School" />
+    <meta
+      property="og:url"
+      content="https://school-website-mu-seven.vercel.app/registerOnline.html"
+    />
+    <meta
+      property="og:image"
+      content="https://school-website-mu-seven.vercel.app/Images/logo.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/Images/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/Images/android-chrome-512x512.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Images/site.webmanifest" />
+    <link rel="shortcut icon" href="/Images/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -13,8 +71,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>Register Online</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <title>Register Online | U-CEE School</title>
   </head>
 
   <body>
@@ -155,16 +212,24 @@
             enctype="multipart/form-data"
           >
             <label for="name">Full Name</label>
-            <input type="text" name="name" required />
+            <input type="text" name="Name from Registration" required />
 
             <label for="email" aria-autocomplete="inline">Email Address</label>
-            <input type="email" name="email" required />
+            <input type="email" name="Email" required />
 
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" required />
+            <input
+              type="tel"
+              name="Phone"
+              title="Phone number must be 11 digits and start with 07, 08, or 09"
+              maxlength="11"
+              inputmode="numeric"
+              pattern="^(0[789][0-9]{9})$"
+              required
+            />
 
             <label for="gender">Gender</label>
-            <select name="gender" required>
+            <select name="Gender" required>
               <option value="">-- Select --</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -174,10 +239,10 @@
             <input type="date" name="D-O-B" />
 
             <label for="address">Current Home Address</label>
-            <textarea name="address" rows="2" required></textarea>
+            <textarea name="Address" rows="2" required></textarea>
 
             <label for="position">School Section</label>
-            <select name="position" required>
+            <select name="Position" required>
               <option value="">-- Select --</option>
               <option value="kg">Kindergarten</option>
               <option value="nursey">Nursery School</option>
@@ -202,16 +267,10 @@
               <option value="no">No</option>
             </select>
 
-            <!-- <label for="cv">Upload Passport</label>
-            <input type="file" name="cv" accept=".pdf,.png,.jpeg" required />
-
-            <label for="bitrhCert">Upload Birth Certificate</label>
-            <input
-              type="file"
-              name="bitrhCert"
-              accept=".pdf,.png,.jpeg,.docx,.doc"
-              required
-            /> -->
+            <p class="cv-note">
+              After submitting, please email the required documents to
+              <strong><a href="mailto:admissions@uceeschool.com">admissions@uceeschool.com</a></strong>
+            </p>
 
             <button type="submit">Submit Form</button>
           </form>
@@ -254,7 +313,9 @@
         <p>
           For more information about how the School will use your information,
           and your child’s information, please
-          <a href="#contact" style="color: #b71c1c; cursor: pointer">contact us</a>.
+          <a href="#contact" style="color: #b71c1c; cursor: pointer"
+            >contact us</a
+          >.
         </p>
       </div>
     </section>

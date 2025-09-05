@@ -121,3 +121,10 @@ plus.addEventListener("click", (e) => {
   e.preventDefault();
   float.classList.toggle("show");
 });
+
+//Removes the floating btn when any link is clicked
+document.querySelectorAll("#floatList a").forEach((link) => {
+  link.addEventListener("click", () => {
+    float.classList.remove("show");
+  });
+});
