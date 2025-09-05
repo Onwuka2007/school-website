@@ -128,3 +128,42 @@ document.querySelectorAll("#floatList a").forEach((link) => {
     float.classList.remove("show");
   });
 });
+
+function previewForm() {
+  const form = document.querySelector("form");
+  const previewContent = document.getElementById("previewContent");
+  let list =
+    "<h3 style='font-weight: bold; color: #b71c1c; margin-bottom: 20px;'>Review Your Answers</h3><ul>";
+  for (let element of form.elements) {
+    if (
+      element.name &&
+      element.type !== "submit" &&
+      element.type !== "button"
+    ) {
+      list += `<li><strong>${element.name}:</strong> ${element.value}</li>`;
+    }
+  }
+  list +=
+    "</ul> <p class='cv-note'>Use the close (x) button to go back and edit or submit if all is correct.</p>";
+  previewContent.innerHTML = list;
+  document.getElementById("previewModal").style.display = "flex";
+}
+
+// Close modal
+function closeModal() {
+  document.getElementById("previewModal").style.display = "none";
+}
+
+// Submit the form after confirming
+function submitForm() {
+  document.querySelector("form").submit();
+}
+
+// Google Analytics Event Tracking for form submission
+function trackFormSubmit() {
+  gtag('event', 'submit', {
+    'event_category': 'Registration Form',
+    'event_label': 'Parent Submission'
+  });
+}
+

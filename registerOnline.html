@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EPX4BJJ2R6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EPX4BJJ2R6");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -184,10 +199,7 @@
         <p>
           Please be aware that you are unable to save progress to return at a
           later date, so you should complete the form when you have all the
-          relevant information to hand. We recommend that you complete the form
-          using the Google Chrome or Edge browser. Please also note that we are
-          unable to accept payment by any card payment for the registration fee,
-          only bank transfer is acceptable.
+          relevant information to hand.
         </p>
         <p>
           Please complete this form in as much detail as possible. We need this
@@ -206,21 +218,28 @@
           >
             <h1>Registration Form</h1>
           </div>
-          <form
-            action="https://formspree.io/f/mjkongpn"
-            method="POST"
-            enctype="multipart/form-data"
-          >
+          <form action="https://formspree.io/f/mjkongpn" method="POST" onclick="trackFormSubmit()">
             <label for="name">Full Name</label>
-            <input type="text" name="Name from Registration" required />
+            <input
+              type="text"
+              name="Student's Full Name"
+              placeholder="Student's full name"
+              required
+            />
 
             <label for="email" aria-autocomplete="inline">Email Address</label>
-            <input type="email" name="Email" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="E.g. name@gmail.com"
+              required
+            />
 
             <label for="phone">Phone Number</label>
             <input
+              placeholder="E.g. 08012345678"
               type="tel"
-              name="Phone"
+              name="Phone Number"
               title="Phone number must be 11 digits and start with 07, 08, or 09"
               maxlength="11"
               inputmode="numeric"
@@ -236,13 +255,13 @@
             </select>
 
             <label for="D-O-B">Date Of Birth</label>
-            <input type="date" name="D-O-B" />
+            <input type="date" name="Date Of Birth" />
 
             <label for="address">Current Home Address</label>
-            <textarea name="Address" rows="2" required></textarea>
+            <textarea name="Home Address" rows="2" required></textarea>
 
-            <label for="position">School Section</label>
-            <select name="Position" required>
+            <label for="section">School Section</label>
+            <select name="Section" required>
               <option value="">-- Select --</option>
               <option value="kg">Kindergarten</option>
               <option value="nursey">Nursery School</option>
@@ -253,26 +272,54 @@
             <label for="specialty">Entry Class</label>
             <input
               type="text"
-              name="specialty"
+              name="Entry Class"
               placeholder="E.g. Senior Secondary School 3"
             />
 
             <label for="qualification">Previous School and Address</label>
-            <textarea name="address" rows="2" required></textarea>
+            <textarea
+              name="Previous School and Address"
+              rows="2"
+              required
+            ></textarea>
 
-            <label for="experience">Any Medical Condition / Allergies</label>
-            <select name="position" required>
+            <label for="medicals">Any Medical Condition / Allergies</label>
+            <select name="Medical Condition / Allergies" required>
               <option value="">-- Select --</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
             </select>
 
             <p class="cv-note">
               After submitting, please email the required documents to
-              <strong><a href="mailto:admissions@uceeschool.com">admissions@uceeschool.com</a></strong>
+              <strong
+                ><a href="mailto:admissions@uceeschool.com"
+                  >admissions@uceeschool.com</a
+                ></strong
+              >
             </p>
 
-            <button type="submit">Submit Form</button>
+            <div class="form-buttons">
+              <button type="submit">Submit Form</button>
+              <button
+                type="button"
+                onclick="previewForm()"
+                name="Preview Answers"
+              >
+                Preview Answers
+              </button>
+            </div>
+
+            <!-- Modal structure -->
+            <div id="previewModal">
+              <div class="preview-content">
+                <span onclick="closeModal()">
+                  <i class="fas fa-times"></i>
+                </span>
+                <div id="previewContent"></div>
+                <button onclick="submitForm()">Confirm & Submit</button>
+              </div>
+            </div>
           </form>
         </div>
 
