@@ -651,6 +651,7 @@ nav li ul li a:hover {
   border-radius: 4px;
   transition: 0.5s ease;
   font-size: 12px;
+  transition: 0.3s ease;
 }
 .send-btn {
   width: 65%;
@@ -658,6 +659,7 @@ nav li ul li a:hover {
 .call-btn:hover,
 .send-btn:hover {
   background: #326d92;
+  color: #f8f9fa;
 }
 
 /*********** EXTERNAL FILES STYLES ***********/
@@ -984,7 +986,7 @@ textarea {
   border: 1px solid #44444467;
   border-radius: 5px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
 }
 
@@ -1000,14 +1002,15 @@ textarea {
   background: #3a91c7;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .reg-form button:hover {
   background: #326d92;
+  color: #f8f9fa;
 }
 
 .text-overlay {
