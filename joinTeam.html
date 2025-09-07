@@ -59,7 +59,7 @@
     />
     <link rel="manifest" href="/Images/site.webmanifest" />
     <link rel="shortcut icon" href="/Images/favicon.ico" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#1a1919" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -215,15 +215,15 @@
             enctype="multipart/form-data"
           >
             <label for="name">Full Name</label>
-            <input type="text" name="name" required />
+            <input type="text" name="Name" required />
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" required />
+            <input type="email" name="Email" required />
 
             <label for="phone">Phone Number</label>
             <input
               type="tel"
-              name="phone"
+              name="Phone"
               title="Phone number must be 11 digits and start with 07, 08, or 09"
               maxlength="11"
               inputmode="numeric"
@@ -232,10 +232,10 @@
             />
 
             <label for="address">Address</label>
-            <textarea name="address" rows="2" required></textarea>
+            <textarea name="Address" rows="2" required></textarea>
 
             <label for="position">Position Applying For</label>
-            <select name="position" required>
+            <select name="Position" required>
               <option value="">-- Select --</option>
               <option value="teaching">Teaching Staff</option>
               <option value="non-teaching">Administrative Staff</option>
@@ -245,12 +245,12 @@
             <label for="specialty">Specialty</label>
             <input
               type="text"
-              name="specialty"
+              name="Specialty"
               placeholder="E.g. Senior Secondary School 3, Mathematics"
             />
 
             <label for="qualification">Highest Qualification</label>
-            <select name="qualification" required>
+            <select name="Qualification" required>
               <option value="">-- Select --</option>
               <option value="NCE">NCE</option>
               <option value="B.Ed">B.Ed</option>
@@ -261,7 +261,7 @@
             </select>
 
             <label for="experience">Years of Experience</label>
-            <select name="experience" required>
+            <select name="Years Of Experience" required>
               <option value="">-- Select --</option>
               <option value="0-1">0–1 years</option>
               <option value="2-5">2–5 years</option>
@@ -269,13 +269,38 @@
             </select>
 
             <label for="message">Why do you want to work with us?</label>
-            <textarea name="message" rows="6"></textarea>
+            <textarea name="Why you want to work with us" rows="6"></textarea>
 
             <p class="cv-note">
               After submitting this form, please send your CV to
-              <strong><a href="mailto:careers@uceeschool.com">careers@uceeschool.com</a></strong>
+              <strong
+                ><a href="mailto:careers@uceeschool.com"
+                  >careers@uceeschool.com</a
+                ></strong
+              >
             </p>
-            <button type="submit">Submit Application</button>
+
+            <div class="form-buttons">
+              <button type="submit">Submit Form</button>
+              <button
+                type="button"
+                onclick="previewForm()"
+                name="Preview Answers"
+              >
+                Preview Answers
+              </button>
+            </div>
+
+            <!-- Modal structure -->
+            <div id="previewModal">
+              <div class="preview-content">
+                <span onclick="closeModal()">
+                  <i class="fas fa-times"></i>
+                </span>
+                <div id="previewContent"></div>
+                <button onclick="submitForm()">Confirm & Submit</button>
+              </div>
+            </div>
           </form>
         </div>
 

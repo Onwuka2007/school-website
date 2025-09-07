@@ -140,7 +140,7 @@ function previewForm() {
       element.type !== "submit" &&
       element.type !== "button"
     ) {
-      list += `<li><strong>${element.name}:</strong> ${element.value}</li>`;
+      list += `<li><strong>${element.name.toUpperCase()}: </strong> ${element.value || " N/A".padStart(7, '.')}</li>`;
     }
   }
   list +=
@@ -161,9 +161,8 @@ function submitForm() {
 
 // Google Analytics Event Tracking for form submission
 function trackFormSubmit() {
-  gtag('event', 'submit', {
-    'event_category': 'Registration Form',
-    'event_label': 'Parent Submission'
+  gtag("event", "submit", {
+    event_category: "Registration Form",
+    event_label: "Parent Submission",
   });
 }
-
