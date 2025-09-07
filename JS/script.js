@@ -129,6 +129,16 @@ document.querySelectorAll("#floatList a").forEach((link) => {
   });
 });
 
+// Close floating menu if clicked outside
+document.addEventListener("click", (e) => {
+  if (
+    float.classList.contains("show") && // only check if it's open
+    !float.contains(e.target) && // click not inside float menu
+    !plus.contains(e.target) // click not on the plus button
+  ) {
+    float.classList.remove("show");
+  }
+});
 function previewForm() {
   const form = document.querySelector("form");
   const previewContent = document.getElementById("previewContent");
@@ -140,7 +150,9 @@ function previewForm() {
       element.type !== "submit" &&
       element.type !== "button"
     ) {
-      list += `<li><strong>${element.name.toUpperCase()}: </strong> ${element.value || " N/A".padStart(7, '.')}</li>`;
+      list += `<li><strong>${element.name.toUpperCase()}: </strong> ${
+        element.value || " N/A".padStart(7, ".")
+      }</li>`;
     }
   }
   list +=
