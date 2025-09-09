@@ -14,7 +14,7 @@ It includes pages like home, gallery, registration, and about.
 - JavaScript
 
 ## Notes
-Work in progress, more features coming soon.
+Work in progress, more features coming soon
 
 ## Live Link
-https://school-website-mu-seven.vercel.app/
+https://uceeschool.vercel.app/
