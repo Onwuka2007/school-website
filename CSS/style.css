@@ -186,7 +186,7 @@ nav li ul li a:hover {
 .hero-content h3 {
   color: #b71c1c;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .hero::after {
   content: "";
@@ -207,7 +207,7 @@ nav li ul li a:hover {
   transform: translateY(-50%);
   background: #3a91c7;
   border-radius: 15px 0 0 15px;
-  padding: 20px;
+  padding: 15px;
   font-weight: bold;
   z-index: 1000;
 }
@@ -401,8 +401,8 @@ nav li ul li a:hover {
   gap: 10px;
   color: #fff;
 }
-.event-list div h1 {
-  padding: 20px 30px;
+.event-list div h2 {
+  padding: 15px 25px;
   margin: 40px;
   border: 2px solid #3a91c7;
 }
@@ -949,6 +949,13 @@ nav li ul li a:hover {
   max-width: 900px;
   max-width: 100%;
   margin: 50px 0 50px 0;
+}
+
+.register-texts ul {
+  margin-left: 40px;
+  list-style-type: square;
+  line-height: 1.6;
+  font-size: clamp(13px, 2.5vw, 15px);
 }
 
 .register-texts li {
