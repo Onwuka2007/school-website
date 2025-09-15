@@ -691,7 +691,9 @@ nav li ul li a:hover {
 .div-sects {
   padding-bottom: 30px;
   border-bottom: 2px solid #cccccc;
-  line-height: 2;
+}
+.div-sects p{
+  line-height: 3;
 }
 
 /* Mission Section */
