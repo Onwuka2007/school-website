@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,9 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+::placeholder, input, select, textarea {
+  font-family: "Poppins", sans-serif;
 }
 .logo-img {
   width: clamp(100px, 10vw, 150px);
@@ -488,11 +492,6 @@ nav li ul li a:hover {
   gap: 10px;
   margin: 30px auto;
 }
-.form-container label {
-  font-weight: bold;
-  color: #1a1919;
-  text-align: left;
-}
 .form-container input {
   padding: 15px;
   border: 1px solid #44444467;
@@ -520,8 +519,27 @@ nav li ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .form-container button:hover {
-  background-color: #1a1919;
-  color: #fff;
+  background-color: #326d92;
+  color: #f8f9fa;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+.pre-date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #44444467;
+  padding: 7px 15px;
+  background: white;
+  border-radius: 8px;
+}
+.pre-date label {
+  font-size: clamp(0.6rem, 2.5vw, 0.77rem);
+  color: #2b2b2b;
+}
+.pre-date input {
+  width: 60%;
+  border-radius: 5px;
 }
 
 /*Quick link Section*/
@@ -692,7 +710,7 @@ nav li ul li a:hover {
   padding-bottom: 30px;
   border-bottom: 2px solid #cccccc;
 }
-.div-sects p{
+.div-sects p {
   line-height: 3;
 }
 
