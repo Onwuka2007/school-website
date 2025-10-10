@@ -44,18 +44,6 @@ function changeSlide() {
 
 setInterval(changeSlide, 4000);
 
-//links scroll
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-      inline: "nearest",
-    });
-  });
-});
-
 // Function to expand the read more text
 function expand() {
   answers.forEach((answer) => {
@@ -77,7 +65,7 @@ function collapse() {
 readMore.addEventListener("click", expand);
 readLess.addEventListener("click", collapse);
 
-// Open modal
+// Open book appointment modal
 registerLink.forEach((regLink) => {
   regLink.addEventListener("click", (e) => {
     e.preventDefault(); //this prevents the link from going to # first

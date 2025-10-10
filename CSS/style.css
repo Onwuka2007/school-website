@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f8f9fa;
@@ -966,8 +969,8 @@ nav li ul li a:hover {
 .reg-form {
   border: 1px solid #ccc;
   padding: 20px;
-  max-width: 900px;
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%;
   margin: 50px 0 50px 0;
 }
 
@@ -1026,7 +1029,8 @@ textarea {
 }
 
 .text-overlay {
-  height: 70vh;
+  height: auto;
+  padding: 50px 20px;
   position: relative;
   overflow: hidden;
   color: white;
@@ -1121,9 +1125,7 @@ textarea {
   .floating-btn div {
     display: none;
   }
-  .text-overlay {
-    height: 50vh;
-  }
+ 
   .text-content h1 {
     display: none;
   }

@@ -9,9 +9,11 @@ It includes pages like home, gallery, registration, and about.
 - Interactive elements (forms, gallery)
 
 ## Tech Used
-- HTML
-- CSS
-- JavaScript
+- HTML5 for structure  
+- CSS3 for styling and layout  
+- JavaScript (ES6+) for interactivity  
+- Formspree for handling form submissions  
+- Deployed using Vercel (serverless hosting)  
 
 ## Notes
 Work in progress, more features coming soon
