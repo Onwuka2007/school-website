@@ -9,6 +9,7 @@
       content="Get to know Ucee School’s teachers and staff dedicated to shaping the future of our students with excellence and care."
     />
     <meta name="author" content="U-CEE Schools" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph Meta Tags -->
     <meta
@@ -74,6 +75,59 @@
     />
     <link rel="canonical" href="https://uceeschool.vercel.app/staff" />
     <title>Our Staff | U-CEE School</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "School",
+        "name": "UCEE School",
+        "image": "https://uceeschool.vercel.app/Images/android-chrome-512x512.png",
+        "url": "https://uceeschool.vercel.app/",
+        "logo": "https://uceeschool.vercel.app/Images/android-chrome-512x512.png",
+        "description": "Improving human knowledge through sound education.",
+        "telephone": "+2348030803265",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "29 Ibitoye St, Alaba",
+          "addressLocality": "Lagos",
+          "postalCode": "102103",
+          "addressCountry": "NG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 6.4582157,
+          "longitude": 3.3264324
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "07:00",
+            "closes": "16:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "Closed",
+            "closes": "Closed"
+          }
+        ],
+        "sameAs": ["https://uceeschool.vercel.app/"]
+      }
+    </script>
   </head>
   <body>
     <!-- Navbar from index-->
@@ -308,11 +362,14 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script src="/JS/script.js"></script>
+    <script src="/JS/script.js" defer></script>
     <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
+      // Load footer after DOM is ready to avoid blocking parsing and improve SEO
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('footer.html')
+          .then((res) => res.text())
+          .then((data) => (document.getElementById('footer').innerHTML = data));
+      });
     </script>
   </body>
 </html>

@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EPX4BJJ2R6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EPX4BJJ2R6");
+    </script>
     <meta
       name="google-site-verification"
       content="ve48hirHtx9cS6O7Jbeyvxe6DvfKXQ8zdw2INtTeni8"
@@ -10,9 +24,7 @@
     <!-- Primary Meta Tags  -->
     <meta
       name="description"
-      content="U-CEE School is dedicated to providing
-      world-class education, nuturing students to achieve academic excellence,
-      creativity, and character development."
+      content="U-CEE School nurtures students with sound education, creativity, and character for lifelong success."
     />
     <meta
       name="keywords"
@@ -38,6 +50,8 @@
     <meta property="og:type" content="website" />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -96,7 +110,7 @@
     <!-- Navbar -->
     <nav>
       <div class="logo">
-        <p style="cursor: default">U-CEE SCHOOLS</p>
+        <p>U-CEE SCHOOLS</p>
       </div>
 
       <!-- Hamburger toggle -->
@@ -173,7 +187,7 @@
       ></div>
       <div class="hero-content">
         <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
-        <h1>Welcome to</h1>
+        <h2>Welcome to</h2>
         <h1>U-CEE Schools</h1>
         <h3>Improving Human Dignity Through Sound Knowledge</h3>
       </div>
@@ -192,27 +206,13 @@
           method="POST"
           class="form-container"
         >
-          <input
-            type="text"
-            name="Name"
-            placeholder="Name"
-            required
-          />
+          <input type="text" name="Name" placeholder="Name" required />
 
-          <input
-            type="email"
-            name="Email"
-            placeholder="Email"
-            required
-          />
+          <input type="email" name="Email" placeholder="Email" required />
 
           <div class="pre-date">
             <label for="Appointment">Preferred Date</label>
-            <input
-              type="date"
-              name="Preferred Date"
-              required
-            />
+            <input type="date" name="Preferred Date" required />
           </div>
 
           <textarea
@@ -243,7 +243,7 @@
       <div class="about-head-content">
         <div class="head-content">
           <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
-          <h1>Proprietress’ Introduction</h1>
+          <h2>Proprietress’ Introduction</h2>
         </div>
         <p class="reveal">
           It is with immense pride and heartfelt joy that I welcome you to U-CEE
@@ -454,7 +454,7 @@
     <!-- Quick Links -->
     <section class="quick-links reveal">
       <img class="logo-img" src="/Images/logo.png" alt="School Logo" />
-      <h1>quick links</h1>
+      <h2>quick links</h2>
       <div class="link-grids">
         <div>
           <a href="missionStatement.html">
@@ -537,6 +537,6 @@
 
     <!-- Footer -->
     <div id="footer"></div>
-    <script src="/JS/script.js"></script>
+    <script src="/JS/script.js" defer></script>
   </body>
 </html>

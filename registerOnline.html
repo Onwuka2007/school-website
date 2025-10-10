@@ -24,6 +24,7 @@
       content="Register online at Ucee School. Complete the admission form easily and begin your child’s journey with us today."
     />
     <meta name="author" content="U-CEE Schools" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph Meta Tags -->
     <meta
@@ -76,6 +77,8 @@
     <link rel="shortcut icon" href="/Images/favicon.ico" />
     <meta name="theme-color" content="#1a1919" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -373,11 +376,13 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script src="/JS/script.js"></script>
+    <script src="/JS/script.js" defer></script>
     <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('footer.html')
+          .then((res) => res.text())
+          .then((data) => (document.getElementById('footer').innerHTML = data));
+      });
     </script>
   </body>
 </html>
