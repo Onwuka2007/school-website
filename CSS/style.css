@@ -100,7 +100,7 @@ nav li ul {
   left: 0;
   background: #1a1919;
   display: none;
-  min-width: 200px;
+  width: 220px;
 }
 nav li:hover ul {
   display: block; /*for dropdowns*/
