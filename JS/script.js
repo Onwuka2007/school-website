@@ -46,6 +46,7 @@ setInterval(changeSlide, 4000);
 
 // Function to expand the read more text
 function expand() {
+  preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "block";
   });
@@ -55,6 +56,7 @@ function expand() {
 
 // Function to close the read more text
 function collapse() {
+  preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "none";
   });
@@ -67,6 +69,7 @@ readLess.addEventListener("click", collapse);
 
 // Open book appointment modal
 registerLink.forEach((regLink) => {
+  preventDefault();
   regLink.addEventListener("click", (e) => {
     e.preventDefault(); //this prevents the link from going to # first
     modal.style.display = "block";
