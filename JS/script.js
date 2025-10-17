@@ -45,8 +45,8 @@ function changeSlide() {
 setInterval(changeSlide, 4000);
 
 // Function to expand the read more text
-function expand() {
-  preventDefault();
+function expand(e) {
+  e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "block";
   });
@@ -55,8 +55,8 @@ function expand() {
 }
 
 // Function to close the read more text
-function collapse() {
-  preventDefault();
+function collapse(e) {
+  e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "none";
   });
