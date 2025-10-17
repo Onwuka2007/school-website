@@ -45,7 +45,8 @@ function changeSlide() {
 setInterval(changeSlide, 4000);
 
 // Function to expand the read more text
-function expand() {
+function expand(e) {
+  e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "block";
   });
@@ -54,7 +55,8 @@ function expand() {
 }
 
 // Function to close the read more text
-function collapse() {
+function collapse(e) {
+  e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "none";
   });
@@ -66,13 +68,20 @@ readMore.addEventListener("click", expand);
 readLess.addEventListener("click", collapse);
 
 // Open book appointment modal
+// registerLink.forEach((regLink) => {
+//   preventDefault();
+//   regLink.addEventListener("click", (e) => {
+//     e.preventDefault(); //this prevents the link from going to # first
+//     modal.style.display = "block";
+//   });
+// });
 registerLink.forEach((regLink) => {
-  preventDefault();
   regLink.addEventListener("click", (e) => {
-    e.preventDefault(); //this prevents the link from going to # first
+    e.preventDefault(); // prevents the link from jumping to #
     modal.style.display = "block";
   });
 });
+
 
 // Close modal
 closeBtn.addEventListener("click", () => {
