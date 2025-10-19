@@ -41,6 +41,8 @@ confirmationSelect.addEventListener("change", (e) => {
   if (e.target.value === "yes") {
     additionalInputDiv.style.display = "block";
   } else {
-    additionalInputDiv.style.display = "none";
+      additionalInputDiv.style.display = "none";
+    //     additionalInputDiv.removeAttribute('name')
+    //   additionalInputDiv.required = false;
   }
 });
