@@ -77,8 +77,8 @@
     <link rel="shortcut icon" href="/Images/favicon.ico" />
     <meta name="theme-color" content="#1a1919" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -292,11 +292,26 @@
             ></textarea>
 
             <label for="medicals">Any Medical Condition / Allergies</label>
-            <select name="Medical Condition / Allergies" required>
+            <select
+              name="Medical Condition / Allergies"
+              id="confirmation"
+              required
+            >
               <option value="">-- Select --</option>
-              <option value="Yes">Yes</option>
+              <option value="yes">Yes</option>
               <option value="No">No</option>
             </select>
+
+            <!-- The new input field, initially hidden -->
+            <div id="additionalInputDiv" style="display: none">
+              <input
+                type="text"
+                name="Specific Condition"
+                id="additionalInput"
+                placeholder="Please specify"
+                required
+              />
+            </div>
 
             <p class="cv-note">
               After submitting, please email the required documents to
@@ -376,12 +391,13 @@
     <!-- Footer -->
     <div id="footer"></div>
 
+    <script src="/JS/formScript.js"></script>
     <script src="/JS/script.js" defer></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        fetch('footer.html')
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
           .then((res) => res.text())
-          .then((data) => (document.getElementById('footer').innerHTML = data));
+          .then((data) => (document.getElementById("footer").innerHTML = data));
       });
     </script>
   </body>

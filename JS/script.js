@@ -45,8 +45,8 @@ function changeSlide() {
 setInterval(changeSlide, 4000);
 
 // Function to expand the read more text
-function expand(e) {
-  e.preventDefault();
+function expand() {
+  preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "block";
   });
@@ -55,8 +55,8 @@ function expand(e) {
 }
 
 // Function to close the read more text
-function collapse(e) {
-  e.preventDefault();
+function collapse() {
+  preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "none";
   });
@@ -68,20 +68,12 @@ readMore.addEventListener("click", expand);
 readLess.addEventListener("click", collapse);
 
 // Open book appointment modal
-// registerLink.forEach((regLink) => {
-//   preventDefault();
-//   regLink.addEventListener("click", (e) => {
-//     e.preventDefault(); //this prevents the link from going to # first
-//     modal.style.display = "block";
-//   });
-// });
 registerLink.forEach((regLink) => {
   regLink.addEventListener("click", (e) => {
-    e.preventDefault(); // prevents the link from jumping to #
+    e.preventDefault(); //this prevents the link from going to # first
     modal.style.display = "block";
   });
 });
-
 
 // Close modal
 closeBtn.addEventListener("click", () => {
@@ -137,37 +129,6 @@ document.addEventListener("click", (e) => {
     float.classList.remove("show");
   }
 });
-function previewForm() {
-  const form = document.querySelector("form");
-  const previewContent = document.getElementById("previewContent");
-  let list =
-    "<h3 style='font-weight: bold; color: #b71c1c; margin-bottom: 20px;'>Review Your Answers</h3><ul>";
-  for (let element of form.elements) {
-    if (
-      element.name &&
-      element.type !== "submit" &&
-      element.type !== "button"
-    ) {
-      list += `<li><strong>${element.name.toUpperCase()}: </strong> ${
-        element.value || " N/A".padStart(7, ".")
-      }</li>`;
-    }
-  }
-  list +=
-    "</ul> <p class='cv-note'>Use the close (x) button to go back and edit or submit if all is correct.</p>";
-  previewContent.innerHTML = list;
-  document.getElementById("previewModal").style.display = "flex";
-}
-
-// Close modal
-function closeModal() {
-  document.getElementById("previewModal").style.display = "none";
-}
-
-// Submit the form after confirming
-function submitForm() {
-  document.querySelector("form").submit();
-}
 
 // Google Analytics Event Tracking for form submission
 function trackFormSubmit() {
