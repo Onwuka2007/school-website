@@ -13,7 +13,8 @@ It includes pages like home, gallery, registration, and about.
 - CSS3 for styling and layout  
 - JavaScript (ES6+) for interactivity  
 - Formspree for handling form submissions  
-- Deployed using Vercel (serverless hosting)  
+- Deployed using Vercel (serverless hosting)
+- XML Sitemaps for SEO Optimization
 
 ## Notes
 Work in progress, more features coming soon
