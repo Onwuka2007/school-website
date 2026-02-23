@@ -1,5 +1,4 @@
 const overlay = document.querySelector(".overlay");
-const navLinks = document.getElementById("nav-links");
 const toggleMenu = document.getElementById("menu-toggle");
 const slides = document.querySelectorAll(".hero-bg");
 const answers = document.querySelectorAll(".answer");
@@ -14,22 +13,26 @@ const float = document.getElementById("floatList");
 const plus = document.getElementById("plus-sign");
 
 // Toggle mobile menu
-toggleMenu.addEventListener("click", function () {
-  mobileMenu.classList.toggle("show");
-  overlay.classList.toggle("hidden");
-});
+if (toggleMenu && mobileMenu && overlay) {
+  toggleMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+    overlay.classList.toggle("hidden");
+  });
+}
 
 // Close mobile menu when overlay is clicked
-overlay.addEventListener("click", () => {
-  overlay.classList.add("hidden");
-  mobileMenu.classList.remove("show");
-});
+if (overlay && mobileMenu) {
+  overlay.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+    mobileMenu.classList.remove("show");
+  });
+}
 
 // Close mobile menu when a link is clicked
 document.querySelectorAll("#mobile-menu a").forEach((link) => {
   link.addEventListener("click", () => {
-    overlay.classList.add("hidden");
-    mobileMenu.classList.remove("show");
+    if (overlay) overlay.classList.add("hidden");
+    if (mobileMenu) mobileMenu.classList.remove("show");
   });
 });
 
@@ -37,54 +40,63 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
 let current = 0;
 
 function changeSlide() {
+  if (!slides.length) return;
   slides[current].classList.remove("active");
   current = (current + 1) % slides.length;
   slides[current].classList.add("active");
 }
 
-setInterval(changeSlide, 4000);
+if (slides.length > 1) {
+  setInterval(changeSlide, 4000);
+}
 
 // Function to expand the read more text
 function expand(e) {
-  e.preventDefault();
+  if (e) e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "block";
   });
-  readMore.style.display = "none";
-  readLess.style.display = "block";
+  if (readMore) readMore.style.display = "none";
+  if (readLess) readLess.style.display = "block";
 }
 
 // Function to close the read more text
 function collapse(e) {
-  e.preventDefault();
+  if (e) e.preventDefault();
   answers.forEach((answer) => {
     answer.style.display = "none";
   });
-  readLess.style.display = "none";
-  readMore.style.display = "block";
+  if (readLess) readLess.style.display = "none";
+  if (readMore) readMore.style.display = "block";
 }
 
 // Add event listeners to the buttons
 
-readMore.addEventListener("click", expand);
-readLess.addEventListener("click", collapse);
+if (readMore && readLess) {
+  readMore.addEventListener("click", expand);
+  readLess.addEventListener("click", collapse);
+}
 
 // Open book appointment modal
-registerLink.forEach((regLink) => {
-  regLink.addEventListener("click", (e) => {
-    e.preventDefault(); //this prevents the link from going to # first
-    modal.style.display = "block";
+if (registerLink.length && modal) {
+  registerLink.forEach((regLink) => {
+    regLink.addEventListener("click", (e) => {
+      e.preventDefault(); //this prevents the link from going to # first
+      modal.style.display = "block";
+    });
   });
-});
+}
 
 // Close modal
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+if (closeBtn && modal) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
 
 // Close modal if clicked outside
 window.addEventListener("click", (e) => {
-  if (e.target === modal) {
+  if (modal && e.target === modal) {
     modal.style.display = "none";
   }
 });
@@ -109,20 +121,23 @@ fetch("/footer.html")
   .then((data) => (document.getElementById("footer").innerHTML = data));
 
 //Floating Btn
-plus.addEventListener("click", (e) => {
-  e.preventDefault();
-  float.classList.toggle("show");
-});
+if (plus && float) {
+  plus.addEventListener("click", (e) => {
+    e.preventDefault();
+    float.classList.toggle("show");
+  });
+}
 
 //Removes the floating btn when any link is clicked
 document.querySelectorAll("#floatList a").forEach((link) => {
   link.addEventListener("click", () => {
-    float.classList.remove("show");
+    if (float) float.classList.remove("show");
   });
 });
 
 // Close floating menu if clicked outside
 document.addEventListener("click", (e) => {
+  if (!float || !plus) return;
   if (
     float.classList.contains("show") && // only check if it's open
     !float.contains(e.target) && // click not inside float menu
