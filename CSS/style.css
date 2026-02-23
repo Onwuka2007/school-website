@@ -1169,6 +1169,7 @@ textarea {
     display: none;
   }
   .mobile-menu {
+    
     height: fit-content;
     display: flex;
     gap: 10px;
